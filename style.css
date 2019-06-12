@@ -77,7 +77,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modalButtom__Cancel
+.modal__Cancel
 {
     border:3px double #65757f;
     background-color: #ffffff;
@@ -108,11 +108,14 @@
     transition: background-color 0.2s ease-out, visibility 0.3s ease-out;
 }
 
-.js-modalButton
+.modal_buttom
 {
     border-radius: 20px;
     padding:6px 16px;
     margin:5px;
+    font-size:14px;
+    font-weight: bold;
+    line-height: 20px;
 }
 
 .js-modalButton--submit
@@ -139,11 +142,4 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease-out, visibility 0.3s ease-out;
-}
-
-.button_text
-{
-    font-size:14px;
-    font-weight: bold;
-    line-height: 20px;
 }
