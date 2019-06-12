@@ -38,7 +38,7 @@ window.addEventListener('load',function()
     
         //モーダルウィンドウのバック黒画面をクリックしたときのイベントを追加する
         document.querySelector('.modal__back').addEventListener('click',modalWindowClose,false);
-        document.querySelector('.modalButtom__Cancel').addEventListener('click',modalWindowClose,false);
+        document.querySelector('.modal__Cancel').addEventListener('click',modalWindowClose,false);
         document.querySelector('.modal__close').addEventListener('click',modalWindowClose,false);
 
     }
