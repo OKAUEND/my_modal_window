@@ -102,7 +102,7 @@
     right: 5px;
 }
 
-.js_modalWindow-close:hover
+.modal__close:hover
 {
     background-color: #cccccc;
     transition: background-color 0.2s ease-out, visibility 0.3s ease-out;
