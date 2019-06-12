@@ -16,12 +16,12 @@ window.addEventListener('load',function()
     {
         //モーダルウィンドウを展開する処理へ変更
         //モーダルウィンドウの各種を表示
-        document.querySelector('#modal').classList.remove('modal--is_show');
-        document.querySelector('.modal__body').classList.remove('modal--is_show');
-        document.querySelector('.modal__back').classList.remove('modal__back--is_active');
+        document.querySelector('#modal').classList.remove('modal--is_hidden');
+        document.querySelector('.modal__body').classList.remove('modal--is_hidden');
+        document.querySelector('.modal__back').classList.remove('modal__back--is_hidden');
     
         //タイトルを設定する
-        document.querySelector('.modal__title--text').appendChild(document.createTextNode(titleText));
+        document.querySelector('.modal__titletext').appendChild(document.createTextNode(titleText));
     
         const modalSubmitbutton = document.querySelector('.modal__Submit');
         //Submitボタンの名前を設定する
@@ -45,13 +45,13 @@ window.addEventListener('load',function()
     function modalWindowClose()
     {    
         //モーダルウィンドウを非表示に
-        document.querySelector('#modal').classList.add('modal--is_show');
-        document.querySelector('.modal__body').classList.add('modal--is_show');
-        document.querySelector('.modal__back').classList.add('modal__back--is_active');
+        document.querySelector('#modal').classList.add('modal--is_hidden');
+        document.querySelector('.modal__body').classList.add('modal--is_hidden');
+        document.querySelector('.modal__back').classList.add('modal__back--is_hidden');
     
         //モーダルウィンドウのタイトル部分にあたるテキストを削除する
         //最初の要素がテキストの要素であることが確定なので、firstchildで指定しそれをremoveする
-        const modalWindowTitleText = document.querySelector('.modal__title--text');
+        const modalWindowTitleText = document.querySelector('.modal__titletext');
         modalWindowTitleText.removeChild(modalWindowTitleText.firstChild);
     
         //Submit用ボタンのテキストを削除する
