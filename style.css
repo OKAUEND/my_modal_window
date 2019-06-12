@@ -131,13 +131,13 @@
     color:#fcf7f7;
 }
 
-.modal__back--is_active
+.modal__back--is_hidden
 {
     opacity: 0;
     pointer-events: none;
 }
 
-.modal--is_show
+.modal--is_hidden
 {
     opacity: 0;
     pointer-events: none;
