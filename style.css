@@ -83,7 +83,7 @@
     background-color: #ffffff;
 }
 
-.title_text
+.modal__title--text
 {
     width: 100%;
     font-weight: bold;
@@ -139,3 +139,11 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease-out, visibility 0.3s ease-out;
+}
+
+.button_text
+{
+    font-size:14px;
+    font-weight: bold;
+    line-height: 20px;
+}
