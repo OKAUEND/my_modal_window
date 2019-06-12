@@ -29,6 +29,12 @@ window.addEventListener('load',function()
     
         //Submitのクラス名を設定する
         modalSubmitbutton.classList.add(submitClassName);
+
+        let $text = document.createElement('p');
+        $text.appendChild(document.createTextNode(titleText));
+
+        let modalItem = document.querySelector('.modal__item');
+        modalItem.appendChild($text);
     
         //モーダルウィンドウのバック黒画面をクリックしたときのイベントを追加する
         document.querySelector('.modal__back').addEventListener('click',modalWindowClose,false);
