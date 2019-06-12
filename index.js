@@ -5,11 +5,11 @@ window.addEventListener('load',function()
 
     submit_buttom.addEventListener('click',() =>
     {
-        modalWindowOpen('OKモード','OK','js-modalButton--submit');
+        modalWindowOpen('パターンA','OK','js-modalButton--submit');
     })
 
     delete_buttom.addEventListener('click',() =>{
-        modalWindowOpen('削除モード','削除','js-modalButton--deleting');
+        modalWindowOpen('パターンB','OK','js-modalButton--deleting');
     })
 
     function modalWindowOpen(titleText,buttonText,submitClassName)
