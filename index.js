@@ -23,7 +23,7 @@ window.addEventListener('load',function()
         //タイトルを設定する
         document.querySelector('.modal__title--text').appendChild(document.createTextNode(titleText));
     
-        const modalSubmitbutton = document.querySelector('.modalButtom__Submit');
+        const modalSubmitbutton = document.querySelector('.modal__Submit');
         //Submitボタンの名前を設定する
         modalSubmitbutton.appendChild(document.createTextNode(buttonText));
     
@@ -55,7 +55,7 @@ window.addEventListener('load',function()
         modalWindowTitleText.removeChild(modalWindowTitleText.firstChild);
     
         //Submit用ボタンのテキストを削除する
-        const modalSubmitbutton = document.querySelector('.modalButtom__Submit');
+        const modalSubmitbutton = document.querySelector('.modal__Submit');
         modalSubmitbutton.removeChild(modalSubmitbutton.firstChild);
     
         //Submit用ボタンのスタイル指定を解除する
