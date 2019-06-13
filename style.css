@@ -5,7 +5,7 @@
 {
     position:fixed;
     top:0;
-    transition: opacity 0.1s ease-out, visibility 0.3s ease-out;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
     border-radius:5px;
 }
 
-.modal__title
+.modal__header
 {
     margin:0;
     padding:0;
@@ -45,7 +45,7 @@
     flex-direction: column;
 }
 
-.modal__ui
+.modal__footer
 {
     margin:0;
     padding:5px;
@@ -141,5 +141,5 @@
 {
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.2s ease-out, visibility 0.3s ease-out;
+    transition: opacity 0.2s ease-out ;
 }
