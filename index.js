@@ -35,7 +35,7 @@ window.addEventListener('load',function()
         let modalItem = document.querySelector('.modal__item');
         modalItem.appendChild($text);
     
-        //モーダルウィンドウのバック黒画面をクリックしたときのイベントを追加する
+        //モーダルウィンドウを閉じるためのイベントを追加する
         document.querySelector('.modal__back').addEventListener('click',modalWindowClose,false);
         document.querySelector('.modal__Cancel').addEventListener('click',modalWindowClose,false);
         document.querySelector('.modal__close').addEventListener('click',modalWindowClose,false);
